@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #222;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+
+/* HEADING */
+
+h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+
+/* FORM */
+
+form {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  gap: 15px;
+}
+
+
+input {
+  width: 100%;
+  padding: 13px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  font-size: 16px;
+  outline: none;
+}
+
+
+input:focus {
+  border-color: #2563eb;
+}
+
+
+/* ADD / UPDATE BUTTON */
+
+form button {
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* STUDENT HEADING */
+
+h2 {
+  margin-top: 40px;
+  color: #1e293b;
+}
+
+
+/* STUDENT LIST */
+
+.student-list {
+  display: grid;
+  gap: 15px;
+}
+
+
+/* STUDENT CARD */
+
+.student-card {
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+.student-card h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+
+.student-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+
+/* BUTTONS */
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+
+.actions button {
+  border: none;
+
+  padding: 9px 14px;
+
+  border-radius: 7px;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+
+/* EDIT */
+
+.edit-btn {
+  background: #f59e0b;
+}
+
+
+/* DELETE */
+
+.delete-btn {
+  background: #dc2626;
+}
+
+
+.edit-btn:hover {
+  background: #d97706;
+}
+
+
+.delete-btn:hover {
+  background: #b91c1c;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .student-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions button {
+    flex: 1;
+  }
+
+}
